@@ -1,20 +1,38 @@
-This is a Kotlin Multiplatform project targeting Android, Web.
+# Auwalk 🐾
 
-* [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./composeApp/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./composeApp/src/jvmMain/kotlin)
-    folder is the appropriate location.
+O **Auwalk** é uma plataforma pensada para facilitar a vida de donos de pets e profissionais de cuidado animal, conectando pessoas que possuem cães e gatos com passeadores e pet sitters confiáveis. O objetivo principal do projeto é oferecer uma solução prática, segura e intuitiva para agendamento de passeios, cuidados diários e acompanhamento da rotina dos animais de estimação.
 
+---
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
-[Kotlin/Wasm](https://kotl.in/wasm/)…
+## Descrição do Projeto
 
-We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public Slack channel [#compose-web](https://slack-chats.kotlinlang.org/c/compose-web).
-If you face any issues, please report them on [YouTrack](https://youtrack.jetbrains.com/newIssue?project=CMP).
+Muitos donos de pets enfrentam dificuldades em encontrar profissionais de confiança para cuidar de seus animais, especialmente em horários específicos ou para serviços recorrentes. O Auwalk surge para preencher essa lacuna, permitindo que:
 
-You can open the web application by running the `:composeApp:wasmJsBrowserDevelopmentRun` Gradle task.
+- Donos de pets possam encontrar e contratar passeadores ou pet sitters de forma rápida e segura.
+- Prestadores de serviços tenham uma ferramenta eficiente para gerenciar sua agenda, visualizar solicitações e receber avaliações.
+- Toda a interação ocorra dentro de uma plataforma confiável, evitando riscos de comunicação e pagamento fora do sistema.
+
+O sistema também permite criar perfis completos de pets, registrar informações relevantes (idade, raça, características) e acompanhar históricos de serviços e avaliações.
+
+---
+
+## Funcionalidades Principais
+
+1. **Cadastro de Usuários:**  
+   Diferencia entre donos de pets e prestadores de serviços, garantindo funcionalidades adequadas a cada perfil.
+
+2. **Perfil de Pets:**  
+   Permite registrar informações detalhadas dos animais, facilitando o cuidado personalizado durante passeios ou serviços.
+
+3. **Agendamento de Serviços:**  
+   Sistema simples para solicitar passeios ou cuidados de forma rápida, incluindo datas, horários e duração.
+
+4. **Gerenciamento de Agenda para Prestadores:**  
+   Ferramenta para organizar compromissos, visualizar histórico e gerenciar disponibilidade.
+
+5. **Avaliações e Feedbacks:**  
+   Donos podem avaliar prestadores de serviços, garantindo transparência e qualidade no atendimento.
+
+6. **Notificações e Alertas:**  
+   Mantém todos informados sobre novos agendamentos, confirmações e mensagens importantes.
+
