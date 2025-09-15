@@ -1,13 +1,13 @@
 import React from "react";
 import "./estiloCadastro.css";
 import dogImage from "../../assets/dog3.webp";
-
+import fundoImage from "../../assets/fundo1.webp";
 const CadastroPrestador: React.FC = () => {
   return (
     <div className="register-wrapper">
       <h1>Cadastro Prestador</h1>
+      <img src={fundoImage} alt="Fundo" className="background-img" />
       <div className="register-body">
-        <div className="register-mask"></div>
         <img src={dogImage} alt="dog" className="register-img" />
 
         <form className="register-form">
