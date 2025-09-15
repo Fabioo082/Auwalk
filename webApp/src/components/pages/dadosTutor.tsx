@@ -119,7 +119,7 @@ const DadosTutor: React.FC<DadosTutorProps> = ({
             Complemento
             <input type="text" value={complemento} disabled />
           </label>
-          <button type="button">Salvar</button>
+          <button type="button" className="btn-salvar">Salvar</button>
         </div>
       </form>
     </div>
