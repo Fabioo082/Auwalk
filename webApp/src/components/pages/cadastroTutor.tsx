@@ -77,7 +77,7 @@ const CadastroTutor: React.FC = () => {
           </label>
           <label className="terms">
             <input type="checkbox" required />
-            Concordo com os <strong>Termos e Condições de uso</strong>
+            Concordo com os Termos e Condições de uso
           </label>
           <button type="submit">Cadastrar</button>
         </form>

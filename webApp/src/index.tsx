@@ -22,6 +22,7 @@ ReactDOM.createRoot(rootElement).render(
       <Header />
       <Routes>
         <Route path='/' element={<Home />}></Route>
+        <Route path='/cadastro' element={<CadastroTutor />}/>
         <Route path='/cadastropet' element={<CadastroPet />}/>
         <Route path='/cadastroprestador' element={<CadastroPrestador />} />
         <Route path='/cadastrotutor' element={<CadastroTutor />}/>

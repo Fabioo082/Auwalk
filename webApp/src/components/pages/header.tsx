@@ -67,7 +67,7 @@ const Header: React.FC = () => {
                     </li>
                     <li>
                       <Link
-                        to="/petsitter"
+                        to="/perfilprestador"
                         onClick={() => setDropdownOpen(false)}
                       >
                         Pet sitter
