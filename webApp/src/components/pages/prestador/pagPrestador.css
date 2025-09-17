@@ -1,0 +1,137 @@
+.app {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app h1 {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-size: 40px;
+}
+/* imagem de fundo manual */
+.fundo {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  max-width: 2000px;
+  height: auto; /* mantém proporção */
+  z-index: 1; /* fica atrás de tudo */
+  object-fit: cover; /* ou cover se quiser preencher */
+}
+
+.conteudo {
+  margin-top: 280px;
+  text-align: center;
+  padding: 0 200px;
+  z-index: 2;
+}
+
+.conteudo h2 {
+  font-size: 35px;
+  font-family: Arial, sans-serif;
+  color: #333333;
+  margin-bottom: 50px; /*espaço entre a frase e o botão*/
+}
+.conteudo h2 strong {
+  color: #000000c8;
+}
+.h3-container {
+  display: flex; /* texto + botão na mesma linha */
+  align-items: center; /* centraliza verticalmente */
+  justify-content: center; /* centraliza horizontalmente */
+  gap: 10px; /* espaço entre h3 e botão */
+}
+
+.h3-container h3 {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #07a0ce;
+  font: bold;
+}
+
+.h3-container button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 12px;
+  background: #07a0ce;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.h3-container button:hover {
+  background-color: #0b7fa8;
+  color: white;
+}
+.imagem-final {
+  margin-top: 50px;
+  text-align: left;
+  margin-left: 100px;
+  z-index: 2;
+  width: 60%;
+  height: auto;
+  min-width: 60px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .fundo {
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    margin-top: -200px;
+  }
+  .app h1 {
+    font-size: 28px;
+    top: 55px;
+  }
+  .conteudo h2 {
+    font-size: 24px;
+    padding: 0px;
+  }
+
+  .h3-container h3 {
+    font-size: 20px;
+  }
+  .imagem-final {
+    max-width: 25%;
+    margin-left: -250px;
+  }
+}
+@media (max-width: 480px) {
+  .fundo {
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    margin-top: -100px;
+  }
+  .app h1 {
+    font-size: 22px; /* menor que no desktop */
+    line-height: 1.4; /* aumenta altura da linha p/ legibilidade */
+    padding: 0 15px; /* espaço lateral */
+    text-align: center;
+  }
+  .conteudo h2 {
+    font-size: 16px;
+    padding: 0 10px;
+    text-align: justify;
+    line-height: 1;
+  }
+
+  .h3-container h3 {
+    font-size: 14px;
+    line-height: 1;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .imagem-final {
+    max-width: 80%;
+    margin-left: 100px;
+  }
+}

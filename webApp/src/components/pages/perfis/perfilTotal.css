@@ -1,0 +1,145 @@
+/* === Base === */
+body {
+  margin: 0;
+  background-color: #f0f2f5;
+}
+
+.profile-header {
+  margin-top: 100px; /* reduz um pouco para telas grandes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid #cbcdcf;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.profile-name {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.edit-profile-button {
+  padding: 12px 16px;
+  background-color: #f6f6fc;
+  color: #333;
+  border: 1px solid #cbcdcf;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.edit-profile-button:hover {
+  background-color: #079fce;
+  color: white;
+}
+
+/* === Ações do usuário === */
+.profile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  width: 100%;
+}
+
+/* Container de botões */
+.btn-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* mantém centralizados */
+  flex-wrap: wrap; /* permite quebra quando necessário */
+  max-width: 900px;
+  width: 100%;
+}
+
+.btn-up button,
+.btn-down button {
+  min-width: 150px;
+  padding: 15px 30px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+/* Botões superiores */
+.btn-up button {
+  background-color: #079fce;
+  color: white;
+  border: none;
+}
+
+.btn-up button:hover {
+  background-color: #0b7fa8;
+}
+
+/* Botões inferiores */
+.btn-down button {
+  background-color: white;
+  color: #079fce;
+  border: 2px solid #079fce;
+  margin-bottom: 50px;
+}
+
+.btn-down button:hover {
+  background-color: #079fce;
+  color: white;
+}
+
+/* === Responsividade === */
+
+/* Telas pequenas (celular) */
+@media (max-width: 600px) {
+  /* centraliza o header acima da imagem */
+  .profile-header {
+    display: flex;
+    flex-direction: column; /* empilha verticalmente */
+    align-items: center; /* centraliza horizontalmente */
+    text-align: center; /* centraliza texto */
+    gap: 10px; /* espaço entre elementos do header */
+    margin-bottom: 20px; /* separa do restante */
+  }
+
+  /* empilha os botões e centraliza */
+  .btn-group {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* espaçamento entre os botões */
+    width: 100%;
+  }
+
+  .btn-up button,
+  .btn-down button {
+    width: 90%;
+    max-width: 250px; /* mantém proporção */
+    margin-left: 0; /* remove deslocamento */
+  }
+
+  /* inputs alinhados e responsivos */
+  .profile-form input {
+    width: 90%; /* ocupa mais espaço da tela */
+    max-width: 400px; /* limita largura máxima */
+    margin: 5px 0; /* espaçamento vertical entre inputs */
+  }
+}
+@media (max-width: 480px) {
+  .btn-group {
+    flex-direction: column; /* empilha os botões */
+    align-items: center;
+  }
+
+  .btn-up button,
+  .btn-down button {
+    width: 90%;
+    max-width: 250px; /* mantém todos iguais e centralizados */
+    margin: 0 auto; /* centraliza horizontalmente */
+    display: block;
+  }
+}
