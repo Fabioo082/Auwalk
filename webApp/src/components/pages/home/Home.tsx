@@ -69,6 +69,15 @@ export default function Home(){
                     ))}
                         </div>
                 </div>
+
+                <div className="bottomSection">
+                        <div className="bottomSection-img">
+                        </div>
+                        <p className='topo-esquerda'>Amor e atenção fazem parte do<br /> bem-estar do seu pet.</p>
+                        <p className='baixo-direita'>Baixe o app Auwalk agora!</p>
+                        <div className="googleApp">
+                        </div>
+                </div>
             </div>
         </>
     )

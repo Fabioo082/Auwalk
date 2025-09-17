@@ -28,6 +28,7 @@ ReactDOM.createRoot(rootElement).render(
         <Route path="/pagprestador" element={<PrestadoPag />} />
         <Route path="/perfilprestador" element={<PerfilPrestador />} />
         <Route path="/perfiltutor" element={<PerfilTutor />} />
+        {/* <Route path="/pesquisa" element={<Pesquisa />} /> */}
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
