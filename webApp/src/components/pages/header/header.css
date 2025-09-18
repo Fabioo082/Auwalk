@@ -5,7 +5,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  background-color: #f0f2f5; /* cor de fallback */
+  background-color: var(--cor-de-fundo); /* cor de fallback */
 }
 
 .header {
@@ -13,7 +13,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background-color: #e9ebef; /* tom mais escuro que o body */
+  background-color: var(--cor-header); /* tom mais escuro que o body */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   font-family: Arial, sans-serif;
 }
@@ -22,7 +22,7 @@ body {
 .header h1 {
   margin: 0;
   font-size: 50px;
-  color: #333333;
+  color: var(--cor-header-fonte);
   font-weight: bold;
   gap: 20px;
 }
@@ -47,7 +47,7 @@ body {
   padding: 10px;
   margin: 0;
   gap: 15px;
-  color: #079fce;
+  color: var(--cor-botao-fonte);
 }
 
 /* Bloco dos botões à direita */
@@ -55,18 +55,18 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
-  color: #079fce;
+  color: var(--cor-botao);
 }
 /* Links do menu */
 .navbar ul li a {
   text-decoration: none;
-  color: #079fce;
+  color: var(--cor-botao);
   font-weight: 500;
   transition: color 0.2s;
 }
 
 .navbar ul li a:hover {
-  color: #666b71; /* cor ao passar o mouse */
+  color: var(--cor-header-fonte-ul-hover);
 }
 .navbar-button,
 .navbar-button-estilo {
@@ -79,23 +79,23 @@ body {
 }
 /*botão cadastro*/
 .navbar-button-estilo {
-  background-color: white;
-  color: #079fce;
-  border: 1px solid #079fce;
+  background-color: var(--cor-opcoes-fonte03);
+  color: var(--cor-botao);
+  border: 1px solid var(--cor-botao);
 }
 .navbar-button-estilo:hover {
-  background-color: #079fce;
-  color: white;
+  background-color: var(--cor-botao);
+  color: var(--cor-opcoes-fonte03);
 }
 /*botão acessar conta*/
 .navbar-button {
-  background-color: #079fce;
-  color: white;
-  border: 1px solid #079fce;
+  background-color: var(--cor-botao);
+  color: var(--cor-opcoes-fonte03);
+  border: 1px solid var(--cor-botao);
 }
 
 .navbar-button:hover {
-  background-color: #0b7fa8;
+  background-color: var(--cor-botao-hover);
 }
 
 .dropdown {
@@ -109,23 +109,23 @@ body {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: white;
+  background-color: var(--cor-opcoes-fonte03);
   border-radius: 5px;
   list-style: none;
   padding: 0;
   margin: 2px 0 0 0;
   z-index: 200;
-  border: 1px solid #079fce;
+  border: 1px solid var(--cor-botao);
 }
 
 /* Itens do menu */
 .dropdown-menu li {
-  border-bottom: 1px solid #079fce;
+  border-bottom: 1px solid var(--cor-botao);
   text-align: center;
 }
 
 .dropdown-menu li:hover {
-  background-color: #e3dede;
+  background-color: var(--cor-opcoes-fonte03);
 }
 
 @media (max-width: 768px) {

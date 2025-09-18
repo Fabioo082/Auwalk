@@ -2,10 +2,7 @@
   "name": "auwalk",
   "version": "1.0.0",
   "private": true,
-  "workspaces": [
-    "webApp",
-    "shared/build/dist/js/developmentLibrary"
-  ],
+  "workspaces": [],
   "scripts": {
     "build": "cd webApp && npm run build",
     "start": "cd webApp && npm run start"
