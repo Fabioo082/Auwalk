@@ -30,6 +30,9 @@ dependencies {
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	implementation("org.apache.commons:commons-compress:1.26.2")
+	implementation("com.google.api-client:google-api-client:2.2.0")
+	implementation("com.google.oauth-client:google-oauth-client-jetty:1.34.1")
+	implementation("com.google.apis:google-api-services-oauth2:v2-rev157-1.25.0")
 }
 
 kotlin {

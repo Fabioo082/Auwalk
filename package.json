@@ -14,6 +14,7 @@
     "@types/node": "^24.3.1"
   },
   "dependencies": {
+    "@react-oauth/google": "^0.12.2",
     "react-icons": "^5.5.0"
   }
 }
