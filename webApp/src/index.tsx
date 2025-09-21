@@ -10,6 +10,7 @@ import DadosTutor from "./components/pages/dados/dadosTutor";
 import PrestadoPag from "./components/pages/prestador/pagPrestador";
 import PerfilPrestador from "./components/pages/perfis/perfilPrestador";
 import PerfilTutor from "./components/pages/perfis/perfilTutor";
+import Login from "./components/pages/login/login"
 
 const rootElement = document.getElementById("root");
 if (!rootElement) throw new Error("Root element not found");
@@ -28,6 +29,7 @@ ReactDOM.createRoot(rootElement).render(
         <Route path="/pagprestador" element={<PrestadoPag />} />
         <Route path="/perfilprestador" element={<PerfilPrestador />} />
         <Route path="/perfiltutor" element={<PerfilTutor />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
