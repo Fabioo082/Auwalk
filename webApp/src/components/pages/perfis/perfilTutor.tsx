@@ -4,14 +4,14 @@ import avatarExemplo from "../../../assets/dog3.webp";
 import { useNavigate } from "react-router-dom";
 
 interface PerfilTutorProps {
-  name: string;
+  name?: string;
   avatarUrl?: string; // imagem do backend
-  onEditProfile: () => void;
-  onMeusDados: () => void;
-  onDadosPet: () => void;
-  onHistorico: () => void;
-  onNovoAgendamento: () => void;
-  onEditarSenha: () => void;
+  onEditProfile?: () => void;
+  onMeusDados?: () => void;
+  onDadosPet?: () => void;
+  onHistorico?: () => void;
+  onNovoAgendamento?: () => void;
+  onEditarSenha?: () => void;
 }
 
 const PerfilTutor: React.FC<PerfilTutorProps> = ({
