@@ -4,8 +4,8 @@
   "private": true,
   "workspaces": [],
   "scripts": {
-    "build": "cd webApp && npm run build",
-    "start": "cd webApp && npm run start"
+    "build": "cd webapp && npm run build",
+    "start": "cd webapp && npm run start"
   },
   "devDependencies": {
     "@types/node": "^24.3.1"
