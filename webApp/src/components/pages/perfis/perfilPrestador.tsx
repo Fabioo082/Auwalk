@@ -4,14 +4,14 @@ import avatarExemplo from "../../../assets/gato.webp";
 import { useNavigate } from "react-router-dom";
 
 interface PerfilPrestadorProps {
-  name: string;
+  name?: string;
   avatarUrl?: string; // agora pode ser opcional
-  onEditProfile: () => void;
-  onMeusDados: () => void;
-  onDadosPet: () => void;
-  onHistorico: () => void;
-  onNovoAgendamento: () => void;
-  onEditarSenha: () => void;
+  onEditProfile?: () => void;
+  onMeusDados?: () => void;
+  onDadosPet?: () => void;
+  onHistorico?: () => void;
+  onNovoAgendamento?: () => void;
+  onEditarSenha?: () => void;
 }
 
 const PerfilPrestador: React.FC<PerfilPrestadorProps> = ({

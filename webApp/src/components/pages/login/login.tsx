@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import './Login.css'; // Importa nosso arquivo de estilos
 import google from '../../../assets/google.png';
 import dog3 from "../../../assets/dog3.webp";
